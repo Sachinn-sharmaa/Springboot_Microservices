@@ -1,0 +1,5 @@
+package com.contact_microservice.controller;
+
+public class ContactController {
+
+}

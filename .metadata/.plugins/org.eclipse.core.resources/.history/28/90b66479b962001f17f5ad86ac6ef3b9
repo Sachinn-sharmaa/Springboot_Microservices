@@ -1,0 +1,6 @@
+package com.contact_microservice.Service;
+
+public class ContactServiceImpl  {
+
+	
+}

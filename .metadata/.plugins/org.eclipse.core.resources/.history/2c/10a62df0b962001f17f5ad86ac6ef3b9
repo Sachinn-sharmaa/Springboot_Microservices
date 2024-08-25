@@ -1,0 +1,19 @@
+package com.contact_microservice.Service;
+
+import java.util.List;
+
+public class ContactServiceImpl implements ContactService{
+	
+	//fake List of Contacts 
+	
+	List<Contact> list = List.of(new Contact(1L, "amit@gmail.com", "Amit", "1311"));
+
+	@Override
+	public List<Contact> getContactofUser(Long userId) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+	
+	
+}

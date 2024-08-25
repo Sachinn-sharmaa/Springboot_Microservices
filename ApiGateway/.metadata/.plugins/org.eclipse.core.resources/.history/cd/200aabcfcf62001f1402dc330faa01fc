@@ -1,0 +1,15 @@
+spring.application.name=apigateway
+server.port=8999
+eureka.instance.hostname=localhost
+
+cloud:
+	gateway:
+		routes:
+			- id: user-service
+			  uri: lb://user-service
+			  predicates: 
+			  	- Path=/user/**
+			- id: contact-service 	
+			  uri: lb://contact-service
+			  predicates: 
+			  	- Path=/contact/**
